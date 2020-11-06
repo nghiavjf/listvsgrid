@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:text="Danh sách bài hát"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:layout_height="50dp"
+        />
+
+    <GridView
+        android:layout_below="@id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/mygridview"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:columnWidth="170dp"
+        android:gravity="center|bottom"
+        android:horizontalSpacing="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:numColumns="2"
+        android:stretchMode="spacingWidth"
+        android:verticalSpacing="20dp"
+        android:visibility="visible"
+        />
+    </RelativeLayout>
+</FrameLayout>
